@@ -37,4 +37,9 @@ public class HotelRoom
 	{
 		return roomType;
 	}
+	
+	public void toString()
+	{
+		
+	}
 }
