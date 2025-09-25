@@ -1,4 +1,4 @@
-package lab2q2a;
+package lab2q1;
 
 public class HotelRoom 
 {
@@ -38,8 +38,8 @@ public class HotelRoom
 		return roomType;
 	}
 	
-	public void toString()
+	public String toString()
 	{
-		
+		return "Your room number is " + roomNumber + ", type is " + roomType;
 	}
 }

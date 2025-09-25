@@ -1,6 +1,4 @@
-package lab2q2a;
-
-import ie.carlowIT.lab1.Thermometer;
+package lab2q1;
 
 //Student Name: 		Ethan Payne
 //Student Id Number: 	C00309151
@@ -16,9 +14,8 @@ public class HotelRoomDriver {
 		
 		roomA.setRoomNumber(200);
 		roomA.setRoomType("Single");
-		roomA.toString();
-		roomB.toString();
-		
+		System.out.println(roomA.toString());
+		System.out.println(roomB.toString());
 		
 	}//end main
 
