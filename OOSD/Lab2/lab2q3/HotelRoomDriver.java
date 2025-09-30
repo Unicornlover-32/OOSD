@@ -2,8 +2,8 @@ package lab2q3;
 
 //Student Name: 		Ethan Payne
 //Student Id Number: 	C00309151
-//Date: 				18/09/25
-//Purpose : 			Hotel room linking room type to number
+//Date: 				30/09/25
+//Purpose : 			Creating hotel objects
 
 public class HotelRoomDriver {
 
