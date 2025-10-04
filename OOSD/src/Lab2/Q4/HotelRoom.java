@@ -33,7 +33,14 @@ public class HotelRoom
 	
 	public void setRoomOccupied(int number)
 	{
-		roomOccupied = number;		
+		if (!isOccupied())
+		{
+			roomOccupied = number;	
+		}
+		else
+		{
+			System.out.println("Already occupied");  // This is to show that the room hasnt been double booked
+		}
 	}
 	
 	public void setRoomRate(double rate)
@@ -67,6 +74,18 @@ public class HotelRoom
 		return roomType;
 	}
 	
+	public Boolean isOccupied()
+	{
+		if (roomOccupied == 1) // If room is booked it will return true
+		{
+			return true;
+		}
+		else	// If room is vacant will return false
+		{
+			return false;
+		}
+	}
+
 	// toString method to print out object
 	public String toString()
 	{

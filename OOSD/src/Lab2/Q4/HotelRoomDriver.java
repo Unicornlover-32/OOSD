@@ -17,6 +17,10 @@ public class HotelRoomDriver {
 		roomA.setRoomOccupied(1);			// Added to show if room is occupied
 		roomA.setRoomRate(80);				// Added to show the rate of room
 		roomA.setRoomType("Single");
+
+		roomB.setRoomOccupied(1); // Make it so that room B becomes occupied
+		roomB.setRoomOccupied(1); // Provide evidence of double booking 
+										 // Prove that it wont double book 
 		System.out.println(roomA.toString());		
 		System.out.println(roomB.toString());
 		System.out.println(roomC.toString());
