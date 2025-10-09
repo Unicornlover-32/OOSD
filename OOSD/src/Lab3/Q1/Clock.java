@@ -17,7 +17,7 @@ public class Clock {
 
         while (cal.get(Calendar.MINUTE) == oldMin)          // Run loop whilst the minute is the same
         {
-            while (System.currentTimeMillis() - startTime < 1000)         
+            while (System.currentTimeMillis() - startTime < 1000)     
             {
                 //Wait 1 second
             }
