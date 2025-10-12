@@ -3,8 +3,7 @@ package Lab3.Q3;
 public class BankCustomer {
     private String name;                           
     private String address;  
-    private static int[] i = new int[50];  
-    public static int x = 0;
+    public static int i = 0;
     private double[] savingsAccount = new double[3];   
     private double balance = 0;             
 
@@ -14,14 +13,14 @@ public class BankCustomer {
     }
 
     public void addAccount(double value){
-        while (i[x] < 3){
-            savingsAccount[i[x]] = value;
-            i[x]++;
+        while (i < 3){
+            savingsAccount[i] = value;
+            i++;
         }
     }
 
     public void balance(){
-        for (int j = 0; j < i[x]; j++){
+        for (int j = 0; j < i; j++){
             balance = balance + savingsAccount[j];
         }
     }
@@ -32,7 +31,7 @@ public class BankCustomer {
     }
 
     public int getNumAccounts(){
-        return i[x];
+        return i;
     }
 
     public String getName(){
