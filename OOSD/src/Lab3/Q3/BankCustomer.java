@@ -3,7 +3,7 @@ package Lab3.Q3;
 public class BankCustomer {
     private String name;                           
     private String address;  
-    public static int i = 0;
+    private int i = 0;
     private double[] savingsAccount = new double[3];   
     private double balance = 0;             
 
@@ -13,23 +13,14 @@ public class BankCustomer {
     }
 
     public void addAccount(double value){
-        while (i < 3){
-            savingsAccount[i] = value;
-            i++;
-        }
-    }
-
-    public void balance(){
-        for (int j = 0; j < i; j++){
-            balance = balance + savingsAccount[j];
+        savingsAccount[i] = value;
+        i++;
+        if (i > 3){
+            System.out.println("Cannot add more accounts. Maximum of 3 accounts reached.");
         }
     }
 
     // Getters
-    public double getBalance(){ 
-        return balance;
-    }
-
     public int getNumAccounts(){
         return i;
     }
@@ -40,5 +31,22 @@ public class BankCustomer {
 
     public String getAddress(){
         return address;
+    }
+
+    //Bank Customer summary
+    public void AccountBalance(){
+        System.out.println("Name: " + name + "\nAddress: " + address);
+        for(int j = 0; j < i; j ++){
+            System.out.println("Savings Account " + (j+1) + " balance: " + savingsAccount[j]);
+        }
+    }
+
+    //other methods
+     public double balance(){
+        for (int j = 0; j < i; j++){
+            balance = balance + savingsAccount[j];
+        }
+
+        return balance;
     }
 }
