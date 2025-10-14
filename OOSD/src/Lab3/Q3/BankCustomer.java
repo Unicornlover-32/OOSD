@@ -4,7 +4,7 @@ public class BankCustomer {
     private String name;                           
     private String address;  
     private int i = 0;                                              // Variable to keep track of number of accounts
-    private SavingsAccount[] account = new SavingsAccount[3];         // Object to hold up to 3 savings account balances    
+    private SavingsAccount[] account = new SavingsAccount[3];       // Object to hold up to 3 savings account balances    
     private double balance = 0;                                     // Variable to hold total balance across all accounts
 
     // Constructor
