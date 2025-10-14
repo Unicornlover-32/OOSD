@@ -8,6 +8,7 @@ public class BankCustomerDriver {
         customer1.addAccount(1000.50);
         customer1.addAccount(2500.75);
         customer1.addAccount(300.00);
+        customer1.addAccount(300.00);  // This should not be added, as the limit is 3 accounts
         customer1.AccountBalance();
         System.out.println("Total balance: " + customer1.balance());
         System.out.println();
