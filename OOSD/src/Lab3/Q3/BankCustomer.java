@@ -14,14 +14,14 @@ public class BankCustomer {
     }
 
     // Method to add a new savings account with an initial balance
-    public void addAccount(double value){
-        if (i < 3){
-            account[i] = new SavingsAccount(value);
-            i++;
-        }
-        else if (i >= 3){
+    public void addAccount(double value){ 
+        if (i >= 3){
             System.out.println("Cannot add more accounts. Maximum of 3 accounts reached.");
             System.out.println();
+        }
+        else{
+            account[i] = new SavingsAccount(value);
+            i++;
         }
     }
 

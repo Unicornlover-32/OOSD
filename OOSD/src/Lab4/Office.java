@@ -1,42 +1,32 @@
 package Lab4;
 
 public class Office extends Employee {
-    private String officeName;
-    private String officeLocation;
+    private String[] officeName = {"Headquarters", "branch1", "branch2"};
+    private String office;
+    private int officeID;
     private static int officeNumber =  100;                     // Static variable to keep track of office number
 
     // Constructors
     public Office() {
-        officeName = "";
-        officeLocation = "";
-        officeNumber++;                                        // Increment office number for each new office
+        officeID = officeNumber;
+        officeNumber++;                                       // Increment office number for each new office
+        if (officeID < 102) {
+            office = officeName[0];
+        }
+        else if (officeID < 104) {
+            office = officeName[1];
+        }
+        else {
+            office = officeName[2];
+        }                                       
     }
 
-    public Office(String officeName, String officeLocation) {
-        this.officeName = officeName;
-        this.officeLocation = officeLocation;
-        officeNumber++;                                        // Increment office number for each new office
+    public String listOffice() {
+        return "these are the available offices: \n" + officeName[0] + "\n" + officeName[1] + "\n" + officeName[2];
     }
-
-    // Getters
-    public String getOfficeName() {
-        return officeName;
-    }
-    public String getOfficeLocation() {
-        return officeLocation;
-    }
-
-    // Setters
-    public void setOfficeName(String officeName) {
-        this.officeName = officeName;
-    }
-    public void setOfficeLocation(String officeLocation) {
-        this.officeLocation = officeLocation;
-    }
-    
     // toString method
     public String toString() {
-        return "Office Name: " + officeName + "\nOffice Location: " + officeLocation + "\nOffice Number: " + officeNumber;
+        return "Office Name: " + office + "\nOffice Number: " + officeID;
     }
 
 }
