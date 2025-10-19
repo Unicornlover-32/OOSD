@@ -13,8 +13,8 @@ public class MyHrDriver {
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         Address[] address = new Address[5];
         Office[] office = new Office[5];
-        Manager[] manager = new Manager[2];
-        Staff[] staff = new Staff[5];
+        Employee[] manager = new Manager[2];
+        Employee[] staff = new Staff[5];
 
         office[0] = new Office(); // Initialize the first office to avoid null when listing offices
         while (optionPick != 4) {
@@ -69,13 +69,15 @@ public class MyHrDriver {
                     System.out.println("What type of vehicle is given to them");
                     String vehicleType = myObj.nextLine();
                     System.out.println();
-                    manager[managerCount] = new Manager(name, vehicleType, address[employeeCount], office[employeeCount]);
-                    System.out.println(manager[managerCount].toString());
+                    manager[employeeCount] = new Manager(name, vehicleType, address[employeeCount], office[employeeCount]);
+                    System.out.println(manager[employeeCount].toString());
                     managerCount++;
+                    employeeCount++;
                 }
                 else {
-                    staff[staffCount] = new Staff(name, address[employeeCount], office[employeeCount]);
-                    System.out.println(staff[staffCount].toString());
+                    staff[employeeCount] = new Staff(name, address[employeeCount], office[employeeCount]);
+                    System.out.println(staff[employeeCount].toString());
+                    employeeCount++;
                     staffCount++;
                 }
             
