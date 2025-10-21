@@ -1,5 +1,10 @@
 package Lab4;
 
+//Student Name: 		Ethan Payne
+//Student Id Number: 	C00309151
+//Date: 				16/10/25
+//Purpose : 			Create Hr driver class to manage employees and offices
+
 import java.util.Scanner;
 
 public class MyHrDriver {

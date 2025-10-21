@@ -1,5 +1,10 @@
 package Lab4;
 
+//Student Name: 		Ethan Payne
+//Student Id Number: 	C00309151
+//Date: 				16/10/25
+//Purpose : 			Create Employee class to store employee details
+
 public class Employee {
     private String name;
     private static int employeeNumber = 1000;                    // Variable to keep track of employee number

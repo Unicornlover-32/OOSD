@@ -1,5 +1,10 @@
 package Lab4;
 
+//Student Name: 		Ethan Payne
+//Student Id Number: 	C00309151
+//Date: 				16/10/25
+//Purpose : 			Create Office class to store office details
+
 public class Office extends Employee {
     private String[] officeName = {"Headquarters", "branch1", "branch2"};
     private String office;

@@ -1,5 +1,10 @@
 package Lab4;
 
+//Student Name: 		Ethan Payne
+//Student Id Number: 	C00309151
+//Date: 				16/10/25
+//Purpose : 			Create Address class to store address details of employees
+
 public class Address extends Employee{
     private String street;
     private String city;

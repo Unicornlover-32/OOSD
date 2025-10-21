@@ -1,5 +1,10 @@
 package Lab4;
 
+//Student Name: 		Ethan Payne
+//Student Id Number: 	C00309151
+//Date: 				16/10/25
+//Purpose : 			Create Nanager class that inherits from Employee and stores manager specific details
+
 public class Manager extends Employee {
     
     private String carType;
