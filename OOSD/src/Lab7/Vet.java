@@ -16,6 +16,16 @@ public class Vet {
     }
 
     public void Vaccinate(Animal animal){
+        System.out.println(GetName() + " is vaccinating ");
+        System.out.println();
         
+        if (animal instanceof Dog) {
+            System.out.println("Dog, " + animal.GetName() + " has been vaccinated.");
+            System.out.println();
+        }
+        else if (animal instanceof Cat) {
+            System.out.println("Cat, " + animal.GetName() + " has been vaccinated.");
+            System.out.println();
+        }
     }
 }
