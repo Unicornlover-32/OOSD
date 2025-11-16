@@ -1,5 +1,5 @@
 package ExamPrep.CA1;
 
-public class Car {
+public class MyDriver {
     
 }
