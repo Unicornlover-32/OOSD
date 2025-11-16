@@ -5,7 +5,7 @@ package Lab4;
 //Date: 				16/10/25
 //Purpose : 			Create Office class to store office details
 
-public class Office extends Employee {
+public class Office {
     private String[] officeName = {"Headquarters", "branch1", "branch2"};
     private String office;
     private int officeID;

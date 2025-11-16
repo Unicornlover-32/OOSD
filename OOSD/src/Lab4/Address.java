@@ -5,7 +5,7 @@ package Lab4;
 //Date: 				16/10/25
 //Purpose : 			Create Address class to store address details of employees
 
-public class Address extends Employee{
+public class Address {
     private String street;
     private String city;
     private String county;
