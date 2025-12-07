@@ -2,7 +2,7 @@ package Lab2.Q4;
 
 //Student Name: 		Ethan Payne
 //Student Id Number: 	C00309151
-//Date: 				18/09/25
+//Date: 				30/09/25
 //Purpose : 			Hotel room linking room type to number
 
 public class HotelRoomDriver {
